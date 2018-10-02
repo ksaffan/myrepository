@@ -1,9 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style type="text/css">
+		
+		div{
+			height: 50px;
+			width: 50px;
+			background-color: #E8EAF6;
+			color: #ffffff;
+			font-size: 2px;
+			text-align: center;
+			vertical-align: middle;
+			display: table-cell;
+		}
+	</style>
 	<title></title>
 </head>
 <body>
-<p>this is in a folder</p>
+	<button onclick="createcontainer()">createconatiner</button>
+	<button onclick="addtext()">Addtext</button>
+
+	<script type="text/javascript">
+		
+		function createcontainer()
+		{
+			var div = document.createElement('div');
+			document.body.append(div);
+			// SEARCH	for append
+		}
+		function addtext(){
+
+
+			var text = document.createTextNode("hello world");
+			document.getElementsByTagName('div')[0].append(text);
+		}
+
+	</script>
+
 </body>
 </html>
